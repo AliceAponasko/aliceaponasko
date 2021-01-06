@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GithubIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightsky_doodle_by_safirasart_dcddjfv-fullview" translatesAutoresizingMaskIntoConstraints="NO" id="PQx-aS-EgR">
+                                <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-1l-BcJ">
+                                <rect key="frame" x="423" y="174" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="635-lg-xsR"/>
+                                    <constraint firstAttribute="height" constant="80" id="aew-TK-wbk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CX0-dX-prj">
+                                <rect key="frame" x="511" y="164" width="400" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="gie-l9-k6O"/>
+                                    <constraint firstAttribute="width" constant="400" id="zrI-6q-c7z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PQx-aS-EgR" secondAttribute="trailing" id="0OP-f7-nK6"/>
+                            <constraint firstItem="PQx-aS-EgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fn2-VB-Dhg"/>
+                            <constraint firstItem="PQx-aS-EgR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Odz-EK-17j"/>
+                            <constraint firstItem="PQx-aS-EgR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Uje-QG-MLI"/>
+                            <constraint firstItem="CX0-dX-prj" firstAttribute="leading" secondItem="ATo-1l-BcJ" secondAttribute="trailing" constant="8" id="W5T-de-a6K"/>
+                            <constraint firstItem="CX0-dX-prj" firstAttribute="top" secondItem="ATo-1l-BcJ" secondAttribute="top" constant="-10" id="Zvx-UB-mW2"/>
+                            <constraint firstItem="ATo-1l-BcJ" firstAttribute="centerY" secondItem="PQx-aS-EgR" secondAttribute="centerY" placeholder="YES" id="kez-3b-KkE"/>
+                            <constraint firstItem="ATo-1l-BcJ" firstAttribute="centerX" secondItem="PQx-aS-EgR" secondAttribute="centerX" placeholder="YES" id="oCp-e3-5Gd"/>
+                            <constraint firstItem="PQx-aS-EgR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sRC-Ba-Gvz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="CX0-dX-prj" id="k3w-Cm-hfV"/>
+                        <outlet property="ufoImageView" destination="ATo-1l-BcJ" id="tGm-CB-LN6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.66090712742982" y="128.97196261682242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2" width="215.33332824707031" height="182.66667175292969"/>
+        <image name="nightsky_doodle_by_safirasart_dcddjfv-fullview" width="341.33334350585938" height="288.33334350585938"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

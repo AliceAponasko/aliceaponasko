@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightsky_doodle_by_safirasart_dcddjfv-fullview" translatesAutoresizingMaskIntoConstraints="NO" id="PQx-aS-EgR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="PQx-aS-EgR">
                                 <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-1l-BcJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="ufo" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-1l-BcJ">
                                 <rect key="frame" x="423" y="174" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="635-lg-xsR"/>
@@ -36,6 +36,16 @@
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiQ-Af-Pug">
+                                <rect key="frame" x="213" y="194" width="500" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="7PL-W7-jA7"/>
+                                    <constraint firstAttribute="height" constant="40" id="eBK-IQ-Mmu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,6 +56,8 @@
                             <constraint firstItem="PQx-aS-EgR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Uje-QG-MLI"/>
                             <constraint firstItem="CX0-dX-prj" firstAttribute="leading" secondItem="ATo-1l-BcJ" secondAttribute="trailing" constant="8" id="W5T-de-a6K"/>
                             <constraint firstItem="CX0-dX-prj" firstAttribute="top" secondItem="ATo-1l-BcJ" secondAttribute="top" constant="-10" id="Zvx-UB-mW2"/>
+                            <constraint firstItem="aiQ-Af-Pug" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fXh-Ar-yxY"/>
+                            <constraint firstItem="aiQ-Af-Pug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hRP-PI-Rtt"/>
                             <constraint firstItem="ATo-1l-BcJ" firstAttribute="centerY" secondItem="PQx-aS-EgR" secondAttribute="centerY" placeholder="YES" id="kez-3b-KkE"/>
                             <constraint firstItem="ATo-1l-BcJ" firstAttribute="centerX" secondItem="PQx-aS-EgR" secondAttribute="centerX" placeholder="YES" id="oCp-e3-5Gd"/>
                             <constraint firstItem="PQx-aS-EgR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sRC-Ba-Gvz"/>
@@ -53,6 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="greetingLabel" destination="CX0-dX-prj" id="k3w-Cm-hfV"/>
+                        <outlet property="messageLabel" destination="aiQ-Af-Pug" id="aa4-5D-Gmc"/>
                         <outlet property="ufoImageView" destination="ATo-1l-BcJ" id="tGm-CB-LN6"/>
                     </connections>
                 </viewController>
@@ -62,8 +75,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2" width="215.33332824707031" height="182.66667175292969"/>
-        <image name="nightsky_doodle_by_safirasart_dcddjfv-fullview" width="341.33334350585938" height="288.33334350585938"/>
+        <image name="sky" width="341.33334350585938" height="288.33334350585938"/>
+        <image name="ufo" width="215.33332824707031" height="182.66667175292969"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

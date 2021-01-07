@@ -15,6 +15,8 @@
 		13B971D925A57662005E6A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B971D725A57662005E6A92 /* LaunchScreen.storyboard */; };
 		13B971E425A57663005E6A92 /* GithubIntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B971E325A57663005E6A92 /* GithubIntroTests.swift */; };
 		13B971EF25A57663005E6A92 /* GithubIntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B971EE25A57663005E6A92 /* GithubIntroUITests.swift */; };
+		13B9720425A6CCCE005E6A92 /* UILabel+Typing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9720325A6CCCE005E6A92 /* UILabel+Typing.swift */; };
+		13B9720D25A6D07E005E6A92 /* Ufo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B9720C25A6D07E005E6A92 /* Ufo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		13B971EA25A57663005E6A92 /* GithubIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B971EE25A57663005E6A92 /* GithubIntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIntroUITests.swift; sourceTree = "<group>"; };
 		13B971F025A57663005E6A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13B9720325A6CCCE005E6A92 /* UILabel+Typing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Typing.swift"; sourceTree = "<group>"; };
+		13B9720C25A6D07E005E6A92 /* Ufo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ufo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,14 @@
 		13B971CB25A57661005E6A92 /* GithubIntro */ = {
 			isa = PBXGroup;
 			children = (
+				13B9720225A6CCC1005E6A92 /* Extensions */,
+				13B9720B25A6D076005E6A92 /* Models */,
 				13B971CC25A57661005E6A92 /* AppDelegate.swift */,
 				13B971CE25A57661005E6A92 /* SceneDelegate.swift */,
 				13B971D025A57661005E6A92 /* ViewController.swift */,
+				13B971D725A57662005E6A92 /* LaunchScreen.storyboard */,
 				13B971D225A57661005E6A92 /* Main.storyboard */,
 				13B971D525A57662005E6A92 /* Assets.xcassets */,
-				13B971D725A57662005E6A92 /* LaunchScreen.storyboard */,
 				13B971DA25A57662005E6A92 /* Info.plist */,
 			);
 			path = GithubIntro;
@@ -126,6 +132,22 @@
 				13B971F025A57663005E6A92 /* Info.plist */,
 			);
 			path = GithubIntroUITests;
+			sourceTree = "<group>";
+		};
+		13B9720225A6CCC1005E6A92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13B9720325A6CCCE005E6A92 /* UILabel+Typing.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13B9720B25A6D076005E6A92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13B9720C25A6D07E005E6A92 /* Ufo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +283,8 @@
 				13B971D125A57661005E6A92 /* ViewController.swift in Sources */,
 				13B971CD25A57661005E6A92 /* AppDelegate.swift in Sources */,
 				13B971CF25A57661005E6A92 /* SceneDelegate.swift in Sources */,
+				13B9720425A6CCCE005E6A92 /* UILabel+Typing.swift in Sources */,
+				13B9720D25A6D07E005E6A92 /* Ufo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
